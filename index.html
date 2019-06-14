@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Mystery+Quest&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Timed Questions Trivia Game</title>
+</head>
+
+<body background="assets/images/tic-tac-toe.png">
+    <wrapper>
+        <br>
+        <br>
+        <div id="initialscreen">
+            <div class="row text-center">
+                <div class="col-md-4"></div>
+                <div class="col-md-4 card border-primary mb-3">
+                    <div class="card-header">Quiz Game with Timers</div>
+                    <div class="card-body text-primary">
+                        <h5 class="card-title">Let's See What You Know!</h5>
+                        <p class="card-text">Quirky Text here</p>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-5"></div>
+                <button type="button" class="btn col-md-2 btn-outline-success">Start Quiz</button>
+                <div class="col-md-5"></div>
+            </div>
+        </div>
+        <br>
+        <div id="gamescreen">
+            <div class="row text-center">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 border rounded text-center bg-white">
+                    <img src="assets/images/NC.gif" class="my-3" style="width: 15rem;" alt="...">
+                        <div class="row"><div class="col-md-5"></div>
+                        <div class="col-md-2 card" id="timerdisplay">30</div>
+                        <div class="col-md-5"></div>
+                    </div>
+                        <div class="card-body">
+                            <h5 id="questionlocation" class="card-title">Question Here</h5>
+                            <br>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button id="answer1" value="1" type="button" class="btn btn-outline-secondary">Answer Choice 1</button>
+                                    <button id="answer2" value="2" type="button" class="btn btn-outline-secondary">Answer Choice 2</button>
+                                    <button id="answer3" value="3" type="button" class="btn btn-outline-secondary">Answer Choice 3</button>
+                                  </div>
+                        </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+        <br>
+        <div id=resultscreen>
+                <div class="row mb-3">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4 text-center rounded bg-primary text-white">
+                        <h2>RESULTS</h2>
+                        <div class="col-md-2"></div>
+    
+                        <div class="qa row mb-1">
+                            <div class="col-md-4 mb-1 card bg-secondary text-center" >Correct: <div id="correcttotal">
+                                    placeholder</div>
+                            </div>
+                            <div class="col-md-4 mb-1 card bg-secondary text-center" >Incorrect: <div
+                                    id="incorrecttotal">placeholder</div>
+                            </div>
+                            <div class="col-md-4 mb-1 card bg-secondary text-center" >Unanswered: <div
+                                    id="unansweredtotal">placeholder</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+            <br>
+            <br>
+    </wrapper>
+
+</body>
+<script src="assets/javascript/app.js"></script>
+
+</html>
